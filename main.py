@@ -4,7 +4,6 @@ import requests
 
 app = Flask(__name__)
 
-S = requests.Session()
 
 @app.route('/home')
 def home():
@@ -22,13 +21,14 @@ def get_random_wiki_article():
         "action": "query",
         "format": "json",
         "list": "random",
-        "rnlimit": "5"
+        "rnlimit": "10"
     }
 
-    R = S.get(url=URL, params=PARAMS)
-    DATA = R.json()
+    Response = requests.get(url=URL, params=PARAMS)
+    DATA = Response.json()
 
     return DATA
+
 
 @app.route('/get-data')
 def get_data():

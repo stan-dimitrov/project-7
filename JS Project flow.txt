@@ -1,0 +1,5 @@
+Handle message:
+1. Filter out the stopwords
+2. Get the keywords only
+3. Search information about the place using the Google Maps API
+4. Search information about the place using the Wikipedia API

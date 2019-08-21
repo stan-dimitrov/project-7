@@ -1,0 +1,68 @@
+Flask Framework
+
+1. Create Flask project
+ - Read the documentation for Flask
+ - Create a new project
+ - Set env variable
+ - Run project
+
+
+Front End
+
+1. JS Events
+ - Handle button click events with JS
+ - Html button
+ - Create JS function which will be executed on click
+
+2. DOM Manipulation
+ - Get element with JS
+ - Create element with JS
+ - Modify Element with JS (i.e. add child)
+
+3. AJAX Request
+ - Create request to the server with (XMLHttpRequest)
+ - Get the response from the request
+
+4. Implement some behavior (getting some data)
+ - Create button
+ - Handle click with JS
+ - Make request to the server
+ - Get the response and visualize it in the DOM
+   - Create element and fill the data inside
+   - Add element to the DOM or to some existing element
+
+
+Back End
+
+1. Create routes (methods with their urls)
+ - Create methods with the @app.route attribute
+ - Test them with going to the specific route and
+   checking if it returns the expected result
+
+2. Make a request to external API
+ - Create method in the project which will send request to the external API
+ - Get the response and return it as a result
+
+
+Wrap everything together
+
+1. Front end part
+ - html page using some JS script file which is fetched from the server
+ - Create the dynanmic part of the page (using the JS file)
+   - Create function which will be executed when interacting with the DOM (i.e. clicking on buttons)
+ - Make requests for fetching data from the server (in these functions)
+
+2. Back end part
+ - Create the needed routes/methods
+ - Return some random/mocked data
+ - Make methods for handling static files
+   - when requesting static files (.js, .css)
+   - define some rule for getting files only for the directory storing
+     the static files
+
+3. API part
+ - Create some rules/methods for fetching data from external API (i.e. Wiki)
+
+Then you can fetch the data through the JS functions which will make 
+requests to the server. The server will make another request in order
+to fetch this data from an external API.
