@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <script src="/js/home.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
 </head>
 <body>
-    This is the home page.
+<div class="container" style="max-width: 600px">
+    <h1>Hello GrandPy Bot</h1>
+    <p>Where do you want to go?</p>
 
-    <p>
-        <button onclick="getData()">Get Random Number</button>
-        <button onclick="getRandomWikiArticles()">Get Random Wiki Article</button>
-    </p>
-
-    <div>
-        Random Numbers:
-        <ul id="list">
-        </ul>
+    <div class="input-group">
+        <input class="form-control" type="text" id="search" onkeydown="inputKeydown(event)">
+        <span class="input-group-append">
+            <button class="btn btn-primary" onclick="search()">Search</button>
+        </span>
     </div>
 
-    <div>
-        Random Wiki Articles:
-        <div id="wiki-articles">
+    <div id="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
+
+    <div id="result">
+
+    </div>
+</div>
+
 </body>
 </html>

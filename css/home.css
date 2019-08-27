@@ -1,0 +1,9 @@
+.card {
+    margin-top: 20px;
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
