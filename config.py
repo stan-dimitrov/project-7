@@ -4,6 +4,7 @@ GOOGLE_MAPS_API = {
 }
 
 WIKI_API = {
+    'ARTICLE_URL': 'https://fr.wikipedia.org/wiki/',
     'SEARCH_REQUEST': {
         'URL': 'https://fr.wikipedia.org/w/api.php',
         'PARAMS': {

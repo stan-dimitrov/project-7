@@ -8,15 +8,23 @@
     <link href="/css/home.css" rel="stylesheet">
 </head>
 <body>
-<div class="container" style="max-width: 600px">
-    <h1>Hello GrandPy Bot</h1>
-    <p>Where do you want to go?</p>
 
-    <div class="input-group">
-        <input class="form-control" type="text" id="search" onkeydown="inputKeydown(event)">
-        <span class="input-group-append">
-            <button class="btn btn-primary" onclick="search()">Search</button>
-        </span>
+<nav class="navbar navbar-light bg-light" style="margin-bottom: 10px">
+    <div style="max-width: 600px; margin: auto">
+      <a class="navbar-brand" href="#">
+        <img src="/pics/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Hello GrandPy Bot
+      </a>
+    </div>
+</nav>
+
+<div class="container" style="max-width: 600px">
+    <div id="result">
+        <div class="card">
+            <div class="card-body">
+                Where do you want to go?
+            </div>
+        </div>
     </div>
 
     <div id="loading">
@@ -25,10 +33,19 @@
         </div>
     </div>
 
-    <div id="result">
-
+    <div class="input-group">
+        <input class="form-control" type="text" id="search" onkeydown="inputKeydown(event)">
+        <span class="input-group-append">
+            <button class="btn btn-primary" onclick="search()">Search</button>
+        </span>
     </div>
 </div>
+
+<footer class="footer">
+    <div style="max-width: 600px; margin: auto">
+        Stamimir Dimitrov @ <a href="https://github.com/stan-dimitrov">GitHub</a>
+    </div>
+</footer>
 
 </body>
 </html>
